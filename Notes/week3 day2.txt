@@ -1,0 +1,70 @@
+Array:
+	-fixed size
+	-if we leave the index as empty, then the memory is not used effectively
+	
+In order to mitigate the above issues we will go with collections
+
+Collections:
+	-Dynamic array (size can shrink or grow)
+	-having methods to increment/decrement the array size automatically
+	-collections can hold only classes (No primitive data types, only wrapper class)
+
+Types:
+1.List
+	-Interface
+	-It can hold duplicate data
+	-Order:FIFO will maintain the order
+	-Based on Index
+Implementing class:
+	-ArrayList
+	-LinkedList
+
+List<E> list=new ArrayList<E>();
+
+Methods in list:
+
+	-size() --> number of items inside the list
+	-add(class item)  --> adding the element(last index+1)return type is boolean
+	-remove(class item)/remove(int index)
+	-get(int index)-->retrieve the item from the given index
+	-clear() -->removing all the items from the list
+	-isEmpty() -->if empty, it would return true or false. Memory also will get deleted
+	-contains(class item) --> to check if the item is present
+2.Set
+	-Interface
+	-cannot hold duplicate values
+
+Implementing class:
+Hashset--> basedon hashing algorithm (print in random order) 
+Treeset -->based on ASCII code (Ascending order)
+LinkedHashset= Order of insertion
+
+Methods:
+	-size() --> number of items inside the list
+	-add(class item)  --> adding the element(last index+1)
+	-remove(class item)/remove(int index)	
+	-clear() -->removing all the items from the list
+	-isEmpty() -->if empty, it would return true or false. Memory also will get deleted
+	-contains(class item) --> to check if the item is present
+
+
+3.Map
+	-Interface
+	-Key:value
+	-Key is always unique whereas value can be duplicate (if we have same key with diff value , then it will get overridden)
+	-Key+ value=Entry
+	
+	
+Implementation:
+HashMap--> basedon hashing algorithm (print in random order)
+TreeMap -->based on ASCII code (Ascending order)
+LinkedHashMap= Order of insertion
+
+Methods:
+-size() --> number of items inside the list
+-put(class key,class value)--> it will add the entry to the map
+-remove(key) -->entry will get removed
+-clear() -- remove all the entries
+-get(class key)--?return the value based on key
+-containsKey()
+entrySet() -> this will give you key and value
