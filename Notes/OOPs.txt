@@ -1,0 +1,103 @@
+OOP - Object Oriented Programming
+
+	-It is based on object
+	-It can contain data(variables) and logic(methods)
+	
+4 Concepts:
+
+	Abstraction
+	Inheritance
+	Polymorphism
+	Encapsulation
+
+Inheritance: (getting the properties from the parents/ancestors)
+	-it's the concept where we are building the relationship bw 2 similar class or similar interfaces
+	 (Parent and child)
+	- to have common functions/avoid duplicate implementation /reduce code
+Parent/super/base class
+child/sub/derived class
+childclass extends parentclass
+car extends vehicle
+we can create obj for child class and using tht obj we can call parent's class methods as well
+what is the difference between import and extends
+
+	-Single inheritance
+	 car extends vehicle
+	-Multilevel inheritance
+	 Audi extends car
+	 car extends vehicle
+	-Hierarchical inheritance
+	 car extends vehicle
+	 Auto extends vehicle
+	-Multiple Inheritance (not allowed in java=ambiguity)
+	Audi extends car,auto (if the both classes are having same methods)
+	-Hybrid inheritance
+	
+Access specifiers/modifiers:
+Public=Global level of access
+week3 day2   week3 day1
+BMW				car
+can create obj for class in BMW class 
+n call methods by importing the week3 day1 package
+inside same package(obj,extends)+outside package(obj,extends)
+Protected-inside same package(obj,extends)+outside package(extends)
+default-outside package
+Private - variable/method can be access within same class
+
+
+Polymorphism:
+
+	-ability to exist in multiple forms
+	
+*Overloading (compile time polymorphism)means before running the code, it will throw an exception
+	-Within same class with same method name(having same access specifiers/modifiers and return type)
+	-But no. of arguments might differ
+NOTE: if we give same no of argumrnts and same data type,
+then it will not allow.coz order shud be different.
+
+Example:
+System.out.println(s.substring(2))-->begin index;
+		System.out.println(s.substring(2,6));-->begining index,ending index-1
+	}
+*Overriding ->Runtime polymorphism(If inheritance applies then only overriding will come into picture)
+	-Different class
+	-Same method name
+	-no of arguments/type of arguments same
+NOTE:At the time of running our code only object will create and runtime polymorphism works
+	
+Abstraction:
+
+	-Display only the relevant info to the end user
+
+Interface
+	-design document/blue print --just we can have the method but it will not get implemented
+	-It's not implemented
+	-keyword: implements
+	-known as 100%abstract (until java v1.7, it's abstract)
+	best practice to have clean coding
+	-cannot create an object for interface
+	instead of creating obj for interfc we are using object of implt class
+	RBI var=new ICICI(); -->using this var, we can access the method /variable inside the interface
+public static final double reporate=7.5;
+static-->constant memory
+final==>constant variable
+
+public abstract void mainbalance();
+public void maxloanamount();
+
+above methods are same if we put abstract or not
+
+
+Abstract class-For time being we can have few methods from the interface
+	-Abstract class may contain implememented and non implemented methods.But, if it has non implemented methods
+	 then it should be a abstract method
+	-keyword:abstract
+	-cannot create object for abstract class. So only we are having the below class
+	
+Concrete class-nothing but a normal class (if we have all the implemented methods)
+
+interface Language
+interface TestTool extends Language
+Abstract class MultipleLangauge
+Automation implements TestTool extends MultipleLangauge
+Can't we implement like above? pls confirm

@@ -1,0 +1,14 @@
+Week1day2 Assignments
+=================
+
+1.https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day1/assignments/CheckIfTheNumberIsPositiveOrNegative.java
+
+2.https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day1/assignments/ConvertANegativeNumberToPositiveNumber.java
+
+3.https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day1/assignments/FibonacciSeries.java
+
+4..https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day1/assignments/ArmstrongNumber.java
+
+5..https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/classroom/arrays/FindSecondLargest.java
+
+6.https://github.com/TestLeafPages/SeleniumAssignments/blob/master/week1/day2/assignments/mandatory/FindIntersection.java

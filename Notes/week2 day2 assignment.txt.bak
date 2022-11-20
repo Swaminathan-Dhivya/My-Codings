@@ -1,0 +1,33 @@
+String is the non primitive data type
+string is a class and it contains some methods
+//string literal
+String s="TestLeaf"; stored ina string pool
+// string object
+String s2=new String(Testleaf); stored in a heap
+
+s.isEquals(s2); will compare the value of the string
+s==s2 will compare the memory
+
+s.isequalsignorecase(s2)
+
+Advanced xPaths:
+1. Parent to child:
+
+basic xPath for parent/childTagName[@attributeName='attributeValue']
+
+ex: 
+//p[@class='top']/input
+//p[@class='top']/input[@name='USERNAME']
+(//p[@class='top']/input)[1]
+
+
+//p[@class='top']/input[@name='USERNAME']
+
+2.Child to Parent:
+
+basic xPath for child/parent::parentTagName
+
+ex: 
+//input[@id='username']/parent::p
+//label[text()='Username']/parent::p
+

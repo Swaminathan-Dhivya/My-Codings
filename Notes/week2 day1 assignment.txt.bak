@@ -1,0 +1,118 @@
+Selenium:jason huggins 2004
+to reduce the toxicity of Mercury (QTP)
+
+webdriver:Siemen stewards 2007
+
+selenium webdriver v3 -2009
+
+QTP=commercial (very costly)
+-supports multiple applications
+-VBscript/Javascript
+-doesn't provide any support for linux/mac
+
+selenium- no licesnse cost-open source
+-supports web application only
+-works with windows,Mac,linux/mac
+-Java,python,Ruby,Pearl,C#,etc..,
+
+selenium webdriver
+
+- can automate only web applications
+- It can talk to diff browsers (Opera,chrome,ff,IE,edge,safari
+- works with windows,Mac,linux/mac,IOS,Android
+
+Cannot do?
+	can we automate excel sheet? NO since it's a window based application
+	java lib ->Apache poi to fetch the data from excel or to write
+	can we automate mainframe appl? No 
+	can we automate performace testing? Jmeter/loadrunner
+	can we automate database -> jdbc
+	can we automate mobile based app? No java libraries-Appium
+	
+Opensource tools--.browsers
+
+	selenium webdriver - more than 40percent market share
+	puppeteer-chrome/js
+	cypress-chrome,ff/js
+	playwright-still emerging
+	webdriver.io-js
+
+How selenium works??
+
+selenium webdriver-->rest API-->chrome driver-->chrome
+
+to check the driver path
+Run -> type .cache
+UserName:Demosalesmanager
+Password:crmsfa
+
+//Driver is interacting with the browser.will check whether the driver is installed
+		//or else it will download the driver
+		WebDriverManager.chromedriver().setup();
+		
+		//If we download it manually we have to set the path. Either the above one shud be given or the below one.
+		//System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+
+Tagname(purple) - html,input,button
+Attributes(brown) -info abt the element
+Attributes values ()info abt the attribute
+Text(black)--in between the tags
+
+
+Locators(8): To find the web elements, locator is used
+ 1.id --> attribute ->1st priority
+ if id contains changing numbers when we have number in the value
+ 2.name-->2nd priority (can be duplicate, so we need to make sure der is no  duplicate)
+ 3.linkText-->3rd priority -->a (anchor tag with text) 
+ 4.classname-->attribute-->4th priority if the class has space, we shudn't use it.
+ class attribute will be there, but in the locators we have to use className
+ selenium will interact the first element if we have multiple class
+ 5.tagName-->html,button,input
+ 6.partial link text--> a anchor tag with part of text
+ 
+ 7.Xpath -->xml path (index starrts with 1)
+ 
+ Absolute xpath:
+ 
+	-starts with '/'
+	-tagName is mandatory
+	-it starts from the root tag(<html>) -disadvantage
+ Relateive xpath
+ 
+    -starts with '//'
+	-tagName is mandatory
+	-it starts from the element tagName
+	
+Basic Xpaths::
+
+1, Attribute based xpath:
+//tagname[@attributename='value']
+ex://input[@id='username']
+using multiple attributes
+//tagname[@attributename='value'][@attributename='value']
+2. Text based xpath:
+//tagname[text()='textvalue']
+ex://label[text()='Username']
+	
+3. Partial attribute based xpath:
+//tagname[contains(@attribute,'partial attributevalue'])
+//input[contains(@id,'user')]
+
+4. Partial text based xpath:
+//label[contains(text().'Username')]
+
+5.Index based xpath: make it as least preference
+(//tagname[@attributename='value'])[index]
+//input[@class='inputLogin'])[2] -->do not use beyond 5 index value
+
+ leafground.com/input.xhtml
+ sendKeys will apppend it
+ getText() -wil get the text from the label(black).
+ clear() - dis will not return nothing, so clear().sendKeys not possible
+ isEnabled()
+ getAttribute("value")- will get the values which is inside the textbox eventhough the value is available or not
+ 
+ to select the option from dropdown
+ use select class, when select tag is der for the dropdown
+ select -option combo
+ 

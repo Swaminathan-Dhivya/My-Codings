@@ -1,0 +1,18 @@
+Problem Statement :
+===================
+Unable to locate/inspect element in Chrome Dev tool by freezing the DOM.
+Either F8 or Pause option doesnt works( with elements in dropdown or calendar).On right click and trying to inspect, element disappears in UI and unable to inspect in DOM ,which has been supported in Previous versions of the browser,predominantly with SalesForce
+
+Solution and Steps to be Followed in Chrome Dev Tools:
+========================================================
+1) Navigate to the WebPage 
+2) Open the Chrome Dev Tools with either options F12 or Right  Click + Inspect or ctrl+shift+i
+3) Click on Console panel in Chrome Dev Tools
+4) Type or Paste the Below lines of code and press the Enter Key
+setTimeout(function(){debugger;},5000);
+--Time unit here is Milliseconds 5000 is 5 Seconds
+Adding wait to freeze the DOM in Debugger mode which has been done programatically in JavaScript
+5) Do the action for the element to be inspected ,Say Click for dropdown (Refer video)
+6) Wait for few seconds,Debugger Mode  (respect to action on F8) will be enabled 
+7) Indicate the Element to be located and same appears in Element Tab
+8) Now follow the locator strategy with defined hierachy (Say ID/name/Class if unique or going forward with XPath) to locate element.
